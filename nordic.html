@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nordic</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Playfair+Display:ital,wght@0,557;1,557&display=swap');
+
+   body{
+   background-image:url('jungle.jpg')
+   }
+
+    .menu{
+    background-color: white;
+    padding: 20px;
+    }
+
+    h1{
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font-weight: 557;
+      font-style: normal;
+      text-align: center;
+      color:white;
+    }
+
+    h2{
+    text-align:center;
+    color:white;
+    }
+
+    /* Основной контейнер с сеткой */
+    .nordics {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px; /* Добавляем отступы между элементами */
+      max-width: 800px; /* Ограничиваем максимальную ширину */
+      margin: 0 auto; /* Центрируем контейнер */
+    }
+
+    /* Стили для каждого товара */
+    .nordic1 {
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font-weight: 550;
+      font-style: normal;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      height: 100%; /* Заставляем все элементы занимать одинаковую высоту */
+      border: 1px solid #eee; /* Добавляем границу для визуального разделения */
+      padding: 15px;
+      box-sizing: border-box; /* Учитываем padding в общей ширине/высоте */
+    }
+
+    .image-container {
+      height: 200px; /* Фиксированная высота для всех изображений */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      overflow: hidden; /* Обрезаем изображение, если оно больше контейнера */
+    }
+
+    /* Стили для изображений */
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover; /* Сохраняем пропорции и обрезаем изображение при необходимости */
+    }
+
+    /* Стили для названия товара */
+    h3 {
+      margin: 10px 0;
+      font-size: 18px;
+      line-height: 1.3;
+      color:white;
+      min-height: 46px; /* Минимальная высота для выравнивания */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Стили для цены */
+    h4 {
+      margin: 10px 0;
+      font-size: 20px;
+      color: white;
+    }
+
+    /* Стили для кнопки */
+    button {
+      background-color: #345BEA;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: auto; /* Прижимаем кнопку к низу контейнера */
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: black;
+    }
+
+    button:active {
+      background-color: #7948D5;
+    }
+  </style>
+</head>
+<body>
+    <div>
+        <a class="menu" href="nordic.html" id="page">Главная</a>
+        <a class="menu" href="coffeebasket.html">Корзина</a>
+    </div>
+
+    <h1>Код кофе</h1>
+    <h2>Хиты продаж</h2>
+    <div class="nordics">
+        <div class="nordic1">
+          <div class="image-container">
+            <img src="https://sun9-10.userapi.com/s/v1/ig2/SO88f_yru7tRgXd1r6_IsLs95cIeFQhPo6zWivJXl9RHmIg9oi6qz7IeZmExxtUrLtkN__KVW_Sp9Q4AUJFxKF_x.jpg?quality=96&as=32x40,48x60,72x90,108x135,160x200,240x300,360x450,480x600,520x650&from=bu&u=8icsbhbg65d9rusXh6jhkpfCLnmspI-0MLSHwVvGiJ4" alt="">
+          </div>
+          <h3>Борщ с пампушкой</h3>
+          <h4>320 ₽</h4>
+          <button>Добавить в корзину</button>
+        </div>
+        <div class="nordic1">
+          <div class="image-container">
+            <img src="https://sun9-13.userapi.com/s/v1/ig2/kjjioez2VK-nOTndasOwYYO5B146djBBwXjOBZn5K-f23O3ZDwdi6J92tdVzkMekF6en5a2Gs6dfgmWfdNmMigRx.jpg?quality=95&as=32x48,48x72,72x108,108x162,160x240,240x360,360x540,480x720,540x810,640x960,720x1080,1080x1620,1280x1920&from=bu&u=Uyh-ETuDm-DjKp2bEY0q98Rox29cfrJYs_fM3yFiXVc&cs=540x0" alt="Гречка с грибами">
+          </div>
+          <h3>Зелёная гречка с грибами, яйцом пашот и муссом из сыра сулугуни</h3>
+          <h4>399 ₽</h4>
+          <button>Добавить в корзину</button>
+        </div>
+        <div class="nordic1">
+          <div class="image-container">
+              <img src="https://sun9-57.userapi.com/s/v1/ig2/bkxtgp1iJauak4zbj3lWY86qOEaadZlPfkQgvmW9uusNISP06q_1pzGsg_rGPVf0Jks23wuR72sCrrtB5emviQ08.jpg?quality=95&as=32x43,48x64,72x96,108x145,160x214,240x321,360x482,480x643,540x723,640x857,720x964,956x1280&from=bu&u=MZNxpp1cuRTlAdaK-CXacAXSXfvh-fiD77ixbG4ZVEU&cs=540x0" alt="Гречка с грибами">
+          </div>
+          <h3>Драники с лососем и яйцом пашот</h3>
+          <h4>530 ₽</h4>
+          <button>Добавить в корзину</button>
+        </div>
+        <div class="nordic1">
+          <div class="image-container">
+              <img src="https://sun9-75.userapi.com/s/v1/ig2/qrZNS8gPDZwUlsKVSmVocN-Tv7YR6Y_81-x6j-MMIayUpGdQ67xmC1a3X_TWDsuEQ3bppXk_ZDctZkubAMuso14K.jpg?quality=96&as=32x40,48x60,72x90,108x135,160x200,240x300,360x450,480x600,540x675,640x800,720x900,828x1035&from=bu&u=R75OeasqBSAxVuycioVRQZme1TbuHXxCFU0jg6Lm5EE&cs=540x0" alt="Гречка с грибами">
+          </div>
+          <h3>Поке с лососем, манго и эдамаме</h3>
+          <h4>540 ₽</h4>
+          <button>Добавить в корзину</button>
+        </div>
+        <div class="nordic1">
+          <div class="image-container">
+              <img src="https://sun9-34.userapi.com/s/v1/ig2/MzjkW_Z8PvlZOkfFoLIzBJR0YmE5JyDc8kAKzpyaOG4TYrksJNAD_rc_35Y7RUAhOuq8KveDEZJv7Gp9V-uiqgdo.jpg?quality=95&as=32x47,48x70,72x105,108x157,160x233,240x349,360x524,480x699,540x786,640x931,720x1048,1080x1572,1280x1863,1440x2096,1759x2560&from=bu&u=pUYcTutD5-GSYtP1t_jK5yAikX3qty5vcZHIMHZCRXw&cs=540x0" alt="Гречка с грибами">
+          </div>
+          <h3>Фетучини Карбонара</h3>
+          <h4>400 ₽</h4>
+          <button>Добавить в корзину</button>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
