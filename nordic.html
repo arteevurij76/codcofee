@@ -83,6 +83,23 @@
       justify-content: center;
     }
 
+    #Добавить_борщ, #Добавить_Поке{
+    margin-right: 30px;
+    }
+
+    #Убрать_борщ, #Убрать_Поке{
+    margin-left: 30px;
+    }
+
+    .colvo {
+    display:none;
+    border-radius:150px;
+    width:45px;
+    height:45px;
+    text-align:center;
+    padding-left:18px;
+    }
+
     /* Стили для цены */
     h4 {
       margin: 10px 0;
@@ -126,7 +143,12 @@
           </div>
           <h3>Борщ с пампушкой</h3>
           <h4>320 ₽</h4>
-          <button>Добавить в корзину</button>
+            <h4>Кол-во штук:<span id="Borschcolvo">0</span></h4>
+          <button id="Борщ">Добавить в корзину</button>
+            <div>
+            <button id="Добавить_борщ" class="colvo">+</button>
+            <button id="Убрать_борщ" class="colvo">-</button>
+            </div>
         </div>
         <div class="nordic1">
           <div class="image-container">
@@ -134,7 +156,7 @@
           </div>
           <h3>Зелёная гречка с грибами, яйцом пашот и муссом из сыра сулугуни</h3>
           <h4>399 ₽</h4>
-          <button>Добавить в корзину</button>
+          <button id="гречка">Добавить в корзину</button>
         </div>
         <div class="nordic1">
           <div class="image-container">
@@ -142,7 +164,7 @@
           </div>
           <h3>Драники с лососем и яйцом пашот</h3>
           <h4>530 ₽</h4>
-          <button>Добавить в корзину</button>
+          <button id="Драники">Добавить в корзину</button>
         </div>
         <div class="nordic1">
           <div class="image-container">
@@ -150,7 +172,12 @@
           </div>
           <h3>Поке с лососем, манго и эдамаме</h3>
           <h4>540 ₽</h4>
-          <button>Добавить в корзину</button>
+            <h4>Кол-во штук:<span id="Pokecolvo">0</span></h4>
+          <button id="Поке">Добавить в корзину</button>
+            <div>
+            <button id="Добавить_Поке" class="colvo">+</button>
+            <button id="Убрать_Поке" class="colvo">-</button>
+            </div>
         </div>
         <div class="nordic1">
           <div class="image-container">
@@ -158,11 +185,11 @@
           </div>
           <h3>Фетучини Карбонара</h3>
           <h4>400 ₽</h4>
-          <button>Добавить в корзину</button>
+          <button id="Карбонара">Добавить в корзину</button>
         </div>
     </div>
 
-
+<script src="script.js"> </script>
 
 </body>
 </html>

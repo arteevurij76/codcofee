@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <meta charset="UTF-8">
     <title>Nordic</title>
   <style>
@@ -41,20 +42,6 @@
     }
 
     /* Стили для каждого товара */
-    .nordic1 {
-      font-family: "Playfair Display", serif;
-      font-optical-sizing: auto;
-      font-weight: 550;
-      font-style: normal;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      height: 100%; /* Заставляем все элементы занимать одинаковую высоту */
-      border: 1px solid #eee; /* Добавляем границу для визуального разделения */
-      padding: 15px;
-      box-sizing: border-box; /* Учитываем padding в общей ширине/высоте */
-    }
-
     .image-container {
       height: 200px; /* Фиксированная высота для всех изображений */
       display: flex;
@@ -69,6 +56,7 @@
       max-width: 100%;
       max-height: 100%;
       object-fit: cover; /* Сохраняем пропорции и обрезаем изображение при необходимости */
+      border-radius: 15px;
     }
 
     /* Стили для названия товара */
@@ -122,6 +110,9 @@
     input{
     font-size:20px;
     }
+    #Borsch{
+      display:none;
+    }
   </style>
 </head>
 <body>
@@ -129,12 +120,19 @@
         <a class="menu" href="nordic.html" id="page">Главная</a>
         <a class="menu" href="coffeebasket.html">Корзина</a>
     </div>
+    <h3>Ваш Заказ</h3>
+    <div class="nordic1">
+        <h3 id="Borsch">Борщ с пампушкой:<span id="Borschcolvo">0</span></h3>
+        <h3 id="Poke">Поке с лососем, манго и эдамаме:<span id="Pokecolvo">0</span></h3>
+    </div>
 
     <form action="">
         <h1>Заполните форму для получения заказа</h1>
         <input type="text" placeholder="Введите имя">
         <input type="text" placeholder="Введите телефон">
-        <button>Оплатить</button>
+        <button id="Sale">Оплатить</button>
     </form>
+    <script src="scriptbasket.js"> </script>
+
 </body>
 </html>
